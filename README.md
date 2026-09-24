@@ -1,7 +1,7 @@
 # Network Monitor — v1
 
 This Android Studio project extends Stage 1 with:
-``- Native Android network information through a Kotlin ↔ JavaScript bridge
+- Native Android network information through a Kotlin ↔ JavaScript bridge
 - Wi-Fi RSSI/dBm
 - Wi-Fi link speed
 - Wi-Fi frequency when exposed by Android
@@ -9,7 +9,7 @@ This Android Studio project extends Stage 1 with:
 - Download speed test
 - Upload speed test
 - Existing latency/jitter/packet-loss monitoring
-- Live latency chart``
+- Live latency chart
 
 ## Build
 Open the project in Android Studio, sync Gradle, connect a device, and Run.
