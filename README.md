@@ -1,4 +1,4 @@
-# Network Monitor — Stage 2 v1
+# Network Monitor — v1
 
 This Android Studio project extends Stage 1 with:
 - Native Android network information through a Kotlin ↔ JavaScript bridge
