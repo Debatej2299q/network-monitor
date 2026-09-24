@@ -9,7 +9,7 @@ This Android Studio project extends Stage 1 with:
 - Download speed test
 - Upload speed test
 - Existing latency/jitter/packet-loss monitoring
-- Live latency chart``
+- Live latency chart```
 
 ## Build
 Open the project in Android Studio, sync Gradle, connect a device, and Run.
