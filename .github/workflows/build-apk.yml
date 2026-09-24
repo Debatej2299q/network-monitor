@@ -27,17 +27,36 @@ jobs:
         with:
           packages: 'platform-tools'
 
-      - name: Install Android SDK 35
+      - name: Install Android SDK
         run: |
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.9'
+          gradle-version: "8.9"
+
+      - name: Check project
+        run: |
+          echo "===== ROOT ====="
+          ls -la
+          echo "===== APP ====="
+          ls -la app
+          echo "===== SETTINGS ====="
+          cat settings.gradle.kts
+          echo "===== ROOT BUILD ====="
+          cat build.gradle.kts
+          echo "===== APP BUILD ====="
+          cat app/build.gradle.kts
+
+      - name: Generate Gradle Wrapper
+        run: |
+          gradle wrapper --gradle-version 8.9
+          chmod +x gradlew
 
       - name: Build APK
-        run: gradle :app:assembleDebug --stacktrace
+        run: |
+          ./gradlew :app:assembleDebug --stacktrace --console=plain
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
