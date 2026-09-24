@@ -1,8 +1,8 @@
 # Network Monitor — v1
 
 This Android Studio project extends Stage 1 with:
-- Native Android network information through a Kotlin ↔ JavaScript bridge
-``- Wi-Fi RSSI/dBm
+```- Native Android network information through a Kotlin ↔ JavaScript bridge
+- Wi-Fi RSSI/dBm
 - Wi-Fi link speed
 - Wi-Fi frequency when exposed by Android
 - Wi-Fi/mobile/ethernet connection type
