@@ -1,21 +1,55 @@
-# Network Monitor — v1
+# 📡 Network Monitor
 
-This Android Studio project extends Stage 1 with:
-- Native Android network information through a Kotlin ↔ JavaScript bridge
-- Wi-Fi RSSI/dBm
-- Wi-Fi link speed
-- Wi-Fi frequency when exposed by Android
-- Wi-Fi/mobile/ethernet connection type
-- Download speed test
-- Upload speed test
-- Existing latency/jitter/packet-loss monitoring
-- Live latency chart
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-35-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-17-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gradle-8.9-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
 
-## Build
-Open the project in Android Studio, sync Gradle, connect a device, and Run.
+<p align="center">
+  <b>⚡ A modern Android network monitoring application</b>
+  <br>
+  Monitor latency, jitter, packet loss, connection quality and network information in real time.
+</p>
 
-## Notes
-1. Wi-Fi RSSI access can require location permission on Android. The app requests ACCESS_FINE_LOCATION at startup.
-2. Speed tests use Cloudflare's public speed-test endpoints. A speed result is a measurement to that endpoint, not a guaranteed ISP maximum.
-3. The upload/download test sizes are intentionally moderate to avoid excessive data use.
-4. Stage 2 is still a foreground diagnostic app. Background monitoring, history persistence, heatmaps and richer native diagnostics can be added later.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ALxTechy/Network-Monitor/main/assets/banner.gif" width="800">
+</p>
+
+---
+
+## ✨ Overview
+
+**Network Monitor** is a lightweight Android application designed to help users understand the quality and performance of their current network connection.
+
+Instead of simply showing whether you're connected to the internet, Network Monitor provides useful information such as:
+
+- 📶 Network quality
+- ⚡ Ping / latency
+- 📊 Jitter
+- 📦 Packet loss
+- 🏆 Connection score
+- 🚀 Download speed
+- 📤 Upload speed
+- 📡 Wi-Fi signal strength
+- 📻 Wi-Fi frequency
+- 🔗 Wi-Fi link speed
+- 🌐 Network type
+
+The application combines a modern web-based interface with native Android functionality through a JavaScript ↔ Android bridge.
+
+---
+
+# 🎯 Why Network Monitor?
+
+Internet connectivity isn't just about being "connected".
+
+A connection can have:
+
+```text
+Good Speed
+     ↓
+High Latency
+     ↓
+Poor Gaming Experience
