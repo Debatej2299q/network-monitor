@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Network Monitor</title>
+  <desc id="desc">Animated futuristic network monitoring dashboard with pulse waves and live signal graph.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.55" stop-color="#0a1028"/>
+      <stop offset="1" stop-color="#03040c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#00f5d4"/>
+      <stop offset="0.5" stop-color="#00bbff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#4f6b9a" stroke-opacity=".12"/>
+    </pattern>
+    <clipPath id="chartClip"><rect x="570" y="168" width="545" height="115" rx="14"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect x="2" y="2" width="1196" height="356" rx="26" fill="none" stroke="#6b7cff" stroke-opacity=".25"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+
+  <circle cx="930" cy="70" r="130" fill="#00c2ff" opacity=".08" filter="url(#soft)"/>
+  <circle cx="220" cy="310" r="110" fill="#7c3aed" opacity=".08" filter="url(#soft)"/>
+
+  <g transform="translate(74 72)">
+    <circle cx="52" cy="52" r="25" fill="#071b28" stroke="#00f5d4" stroke-width="2" filter="url(#glow)"/>
+    <path d="M40 53h24M52 41v24" stroke="#00f5d4" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="52" cy="52" r="42" fill="none" stroke="#00f5d4" stroke-opacity=".25">
+      <animate attributeName="r" values="38;65;38" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".55;0;.55" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="52" cy="52" r="58" fill="none" stroke="#00bbff" stroke-opacity=".18">
+      <animate attributeName="r" values="45;82;45" dur="2.2s" begin=".7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".45;0;.45" dur="2.2s" begin=".7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <text x="74" y="178" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="48" font-weight="800">NETWORK MONITOR</text>
+  <text x="78" y="210" fill="#8ea0c6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Real-time latency • jitter • packet loss • speed • Wi-Fi diagnostics</text>
+
+  <g transform="translate(74 240)">
+    <rect width="110" height="42" rx="12" fill="#081b22" stroke="#00f5d4" stroke-opacity=".35"/>
+    <circle cx="22" cy="21" r="6" fill="#00f5d4"><animate attributeName="opacity" values="1;.35;1" dur="1.3s" repeatCount="indefinite"/></circle>
+    <text x="38" y="27" fill="#d8fff8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">ONLINE</text>
+    <rect x="124" width="115" height="42" rx="12" fill="#09172a" stroke="#00bbff" stroke-opacity=".35"/>
+    <text x="140" y="27" fill="#c9eaff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">PING 24 ms</text>
+    <rect x="253" width="115" height="42" rx="12" fill="#0d1028" stroke="#8b5cf6" stroke-opacity=".4"/>
+    <text x="269" y="27" fill="#e5dcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">SCORE 92</text>
+  </g>
+
+  <g transform="translate(570 58)">
+    <rect width="545" height="88" rx="18" fill="#070d20" stroke="#6674a8" stroke-opacity=".28"/>
+    <text x="24" y="30" fill="#8394ba" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">LIVE NETWORK STATUS</text>
+    <text x="24" y="61" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Stable connection</text>
+    <g transform="translate(430 24)">
+      <rect x="0" y="22" width="8" height="16" rx="4" fill="#00f5d4"/>
+      <rect x="14" y="16" width="8" height="22" rx="4" fill="#00f5d4"/>
+      <rect x="28" y="9" width="8" height="29" rx="4" fill="#00bbff"/>
+      <rect x="42" y="1" width="8" height="37" rx="4" fill="#8b5cf6"/>
+      <animateTransform attributeName="transform" type="translate" values="430 24;432 24;430 24" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g transform="translate(570 168)">
+    <rect width="545" height="115" rx="14" fill="#060b19" stroke="#6674a8" stroke-opacity=".22"/>
+    <g opacity=".35">
+      <path d="M0 29H545M0 58H545M0 87H545" stroke="#63749f"/>
+      <path d="M91 0V115M182 0V115M273 0V115M364 0V115M455 0V115" stroke="#63749f"/>
+    </g>
+    <path d="M0 82 L30 78 L60 83 L90 51 L120 63 L150 58 L180 73 L210 37 L240 50 L270 46 L300 69 L330 58 L360 76 L390 32 L420 49 L450 42 L480 61 L510 39 L545 46"
+      fill="none" stroke="#00f5d4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <path d="M0 82 L30 78 L60 83 L90 51 L120 63 L150 58 L180 73 L210 37 L240 50 L270 46 L300 69 L330 58 L360 76 L390 32 L420 49 L450 42 L480 61 L510 39 L545 46 L545 115 L0 115Z" fill="url(#accent)" opacity=".08" clip-path="url(#chartClip)"/>
+    <circle cx="0" cy="82" r="5" fill="#00f5d4" filter="url(#glow)">
+      <animate attributeName="cx" values="0;545;0" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="82;46;82" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <text x="570" y="315" fill="#607294" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">ANDROID • KOTLIN • WEBVIEW • GITHUB ACTIONS</text>
+  <text x="1115" y="315" text-anchor="end" fill="#607294" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">ALx Techy</text>
+</svg>
